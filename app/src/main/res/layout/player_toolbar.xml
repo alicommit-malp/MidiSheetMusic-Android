@@ -6,7 +6,7 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="@dimen/toolbar_height"
     android:layout_marginStart="8dp"
     android:layout_marginTop="4dp"
@@ -63,6 +63,7 @@
         android:progress="100" />
 
     <Button
+        android:visibility="gone"
         android:id="@+id/btn_midi"
         style="@style/DisabledToolbarButton"
         android:text="MIDI"
@@ -72,20 +73,26 @@
 
     <View
         android:layout_width="0dp"
+        android:visibility="gone"
         android:layout_height="match_parent"
         android:layout_weight="1" />
 
+    <ImageButton
+        android:id="@+id/btn_settings"
+        style="@style/ToolbarButtonStyle"
+        android:src="@drawable/ic_settings"
+        android:contentDescription="@string/settings" />
     <Button
         android:id="@+id/btn_left"
         style="@style/ToolbarButtonStyle"
-        android:text="L"
+        android:text=""
         android:textColor="@color/IconColor"
         android:textSize="16sp" />
 
     <Button
         android:id="@+id/btn_right"
         style="@style/ToolbarButtonStyle"
-        android:text="R"
+        android:text=""
         android:textColor="@color/IconColor"
         android:textSize="16sp" />
 
@@ -95,10 +102,5 @@
         android:src="@drawable/ic_piano"
         android:contentDescription="@string/show_hide_piano" />
 
-    <ImageButton
-        android:id="@+id/btn_settings"
-        style="@style/ToolbarButtonStyle"
-        android:src="@drawable/ic_settings"
-        android:contentDescription="@string/settings" />
 </LinearLayout>
 <!--</merge>-->

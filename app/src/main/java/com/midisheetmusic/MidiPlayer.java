@@ -207,8 +207,8 @@ public class MidiPlayer extends LinearLayout {
             drawer.openDrawer();
         });
         midiButton.setOnClickListener(v -> toggleMidi());
-        leftHandButton.setOnClickListener(v -> toggleTrack(LEFT_TRACK));
-        rightHandButton.setOnClickListener(v -> toggleTrack(RIGHT_TRACK));
+//        leftHandButton.setOnClickListener(v -> toggleTrack(LEFT_TRACK));
+//        rightHandButton.setOnClickListener(v -> toggleTrack(RIGHT_TRACK));
         pianoButton.setOnClickListener(v -> togglePiano());
 
         // Resize the speedBar so all toolbar icons fit on the screen
